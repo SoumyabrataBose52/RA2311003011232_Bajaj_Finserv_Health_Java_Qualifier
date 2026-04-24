@@ -62,5 +62,3 @@ java Main
 ## Author
 
 - Soumyabrata Bose [RA2311003011232]
-
-* Soumyabrata Bose [RA2311003011232]
