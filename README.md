@@ -1,55 +1,56 @@
 # RA2311003011232_Bajaj_Finserv_Health_Java_Qualifier
 
 # Quiz Leaderboard System (Java)
-## Overview
+## Features Implemented
 
-This project solves the Quiz Leaderboard assignment by:
+The Quiz Leaderboard System project successfully implements the Quiz Leaderboard assignment through the following features:
 
-* Fetching data from an external API
-* Removing duplicate entries
-* Calculating total scores
-* Generating a leaderboard
-* Submitting the final result
-
----
-
-## Tech Used
-
-* Java
-* HTTPURLConnection for API calls
-* HashSet & HashMap for logic
+- API call
+- Deduplication of data
+- Score calculation
+- Leaderboard creation
+- Submission of result
 
 ---
 
-## How It Works
+## Tech Stack
 
-1. Calls the API **10 times** (`poll = 0 to 9`)
-2. Waits **5 seconds** between each call
-3. Collects all quiz events
-4. Removes duplicates using:
-
-   ```
-   (roundId + participant)
-   ```
-5. Calculates total score per participant
-6. Sorts leaderboard (highest score first)
-7. Submits final result to API
+- Java Programming Language
+- HTTPURLConnection for API requests
+- HashSet & HashMap classes for logic implementation
 
 ---
 
-## Key Logic
+## Workflow
+
+- Makes API request **10 times** (i.e., `poll = 0 to 9`)
+- Rests for **5 seconds** after each request
+- Stores all events of quizzes
+- Eliminates duplicate data based on:
+
+  ```
+  (roundId + participant)
+  ```
+
+- Determines total score of each participant
+- Creates the leaderboard (based on highest score)
+- Sends results to API
+
+---
+
+## Important Points to Note
 
 * **Deduplication**
 
-  * Uses a `HashSet` to avoid counting repeated entries
+  * Utilizes a `HashSet` class to prevent multiple instances of same entry
+  
+* **Score Calculation**
 
-* **Score Aggregation**
-
-  * Uses a `HashMap` to store total scores
+  * Utilizes a `HashMap` class to calculate total score of participants
 
 ---
 
-## How to Run
+## Code Execution
 
 ```bash
 javac Main.java
@@ -59,5 +60,7 @@ java Main
 ---
 
 ## Author
+
+- Soumyabrata Bose [RA2311003011232]
 
 * Soumyabrata Bose [RA2311003011232]
